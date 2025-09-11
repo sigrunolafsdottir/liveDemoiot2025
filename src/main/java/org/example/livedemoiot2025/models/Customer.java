@@ -28,7 +28,7 @@ public class Customer {
     private String name;
     private String email;
 
-    @OneToOne
+    @OneToOne(cascade=CascadeType.ALL)
     @JoinColumn
     private Kpi kpi;
 

@@ -19,6 +19,14 @@ public class LiveDemoiot2025Application {
     @Bean
     public CommandLineRunner createData (KpiRepo kpiRepo, CustomerRepo customerRepo) {
         return args -> {
+
+            /*
+            Customer c1 = new Customer("Melody", "mello@fdsf.com", new Kpi(98));
+            Customer c2 = new Customer("BUrt", "burt@fdsf.com", new Kpi(33));
+
+            customerRepo.save(c1);
+            customerRepo.save(c2);
+*/
 /*
             Kpi kpi1 = new Kpi(67 );
             Kpi kpi2 = new Kpi(98 );
