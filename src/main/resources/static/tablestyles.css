@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;   /* Merge borders into single lines */
+    border: 3px solid black;     /* Thick border around the table */
+}
+
+th, td {
+    border: 1px solid black;     /* Thin borders between cells */
+    padding: 8px;                /* Space inside each cell */
+    text-align: left;            /* Left align text */
+}

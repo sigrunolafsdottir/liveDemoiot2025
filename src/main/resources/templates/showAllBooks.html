@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="tablestyles.css">
+</head>
+<body>
+
+<h2 th:text="${bookTitle}"></h2>
+<div class="allBooks" th:unless="${#lists.isEmpty(allBooks)}">
+
+    <table>
+        <th th:text="${label1}"></th>
+        <th th:text="${label2}"></th>
+
+        <tbody>
+        <tr th:each="book : ${allBooks}">
+            <td  th:text="${book.title}"></td>
+            <td th:text="${book.author}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>
